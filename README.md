@@ -2,7 +2,7 @@
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/)
 [![Build Status](https://img.shields.io/docker/build/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/builds/)
-[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-corek/)
+[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/)
 
 This image enables you to run [Atlassian JIRA Software](https://www.atlassian.com/software/jira/software).
 
