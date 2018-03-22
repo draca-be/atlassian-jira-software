@@ -1,8 +1,8 @@
 # Atlassian JIRA Software
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/)
-[![Build Status](https://img.shields.io/docker/build/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/builds/)
-[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-jira-core.svg)](https://hub.docker.com/r/draca/atlassian-jira-core/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/)
+[![Build Status](https://img.shields.io/docker/build/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/builds/)
+[![Docker Stars](https://img.shields.io/docker/stars/draca/atlassian-jira-software.svg)](https://hub.docker.com/r/draca/atlassian-jira-software/)
 
 This image enables you to run [Atlassian JIRA Software](https://www.atlassian.com/software/jira/software).
 
@@ -14,7 +14,7 @@ In order to set up the autogeneration of images the repositories had to be restr
 
 # Versions
 
-There are tags available for latest, latest major, latest minor and individual versions. If for example you want to run the latest 7.8 version, you can use draca/atlassian-jira-core:7.8
+There are tags available for latest, latest major, latest minor and individual versions. If for example you want to run the latest 7.8 version, you can use draca/atlassian-jira-software:7.8
 
 # Autogeneration
 
@@ -65,7 +65,7 @@ If you want to mount a volume or a directory to store your data outside of the c
 
 Example:
 
-    docker run -it --rm -p 8080:8080 draca/atlassian-jira-core
+    docker run -it --rm -p 8080:8080 draca/atlassian-jira-software
 
 A very quick docker-compose file could be:
 
@@ -73,7 +73,7 @@ A very quick docker-compose file could be:
 version: '3'
 services:
   jira:
-    image: draca/atlassian-jira-core
+    image: draca/atlassian-jira-software
     environment:
       - DISABLE_NOTIFICATIONS=TRUE
       - JIRA_ARGS=-Datlassian.plugins.enable.wait=300
