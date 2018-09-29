@@ -16,7 +16,7 @@ TZ_FILE="/usr/share/zoneinfo/${CONTAINER_TZ}"
 
 if [ -n "${CONTAINER_TZ}" ] && [ -f ${TZ_FILE} ]; then
     cp /${TZ_FILE} /etc/localtime
-    echo "${CONTAINER_TZ}" > /etc/localtime
+    echo "${CONTAINER_TZ}" > /etc/timezone
 fi
 
 
