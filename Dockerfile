@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:8u162b12_jdk
+FROM anapsix/alpine-java:8u181b13_jdk
 
 MAINTAINER draca <info@draca.be>
 
@@ -15,7 +15,7 @@ EXPOSE 8080
 
 WORKDIR $JIRA_HOME
 
-RUN apk add --no-cache curl tar shadow\
+RUN apk add --no-cache curl tar shadow tzdata \
     && groupadd -r ${RUN_GROUP} \
     && useradd -r -g ${RUN_GROUP} ${RUN_USER} \
     && mkdir -p "${JIRA_HOME}" "${JIRA_INSTALL}" \
