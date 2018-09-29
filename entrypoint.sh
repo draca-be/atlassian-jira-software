@@ -39,7 +39,7 @@ else
     sed -i "s/^DISABLE_NOTIFICATIONS/#DISABLE_NOTIFICATIONS/g" ${SETENV}
 fi
 
-if [ -n "${KEEP_ACCESS_LOGS} ]; then
+if [ -n "${KEEP_ACCESS_LOGS}" ]; then
     # Do nothing
 else
     sed -i -e '1h;2,$H;$!d;g' -e 's:<Valve className="org.apache.catalina.valves.AccessLogValve"[^/]*/>::g' conf/server.xml
